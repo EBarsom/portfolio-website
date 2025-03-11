@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emad Barsom - UI/UX Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -23,65 +25,58 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero">
             <div class="container">
                 <h1>My name is Emad Barsom <span>UI/UX Designer</span></h1>
                 <p>UI/UX designer passionate about creating intuitive and visually appealing digital experiences.</p>
+                <a href="#" class="button">read more</a>
             </div>
         </section>
-        <section class="work">
+        <section id="work">
             <div class="container">
                 <h2>Recent projects</h2>
                 <div class="projects-wrapper">
-                <div class="project-card">
-                    <div class="project-card__media">
-                        <img src="img/project 1.png" alt="Project 1">
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <img src="img/project 1.png" alt="Project 1">
+                        </div>
+                        <div class="project-card__content">
+                            <h4>Project 1</h4>
+                            <p>Short description of Project 1.</p>
+                            <a href="https://drive.google.com/file/d/17mWcxD8fTF8sc8fw9FF4u1OCVC5Mw7TL/view?usp=share_link" class="button project-btn" target="_blank">View Project</a>
+
+                        </div>
                     </div>
-                    <div class="project-card__content">
-                        <h4>Project 1</h4>
-                        <p>Short description of Project 1.</p>
-                        <a href="https://www.behance.net/gallery/219563395/Case-Study-JobSync-Desktop-Design">View Project</a>
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <img src="img/project 2.png" alt="Project 2">
+                        </div>
+                        <div class="project-card__content">
+                            <h4>Project 2</h4>
+                            <p>Short description of Project 2.</p>
+                            <a href="https://drive.google.com/file/d/1v73kEFddJ-E3f1B81QfkwmSqt23krogs/view?usp=share_link" class="button project-btn" target="_blank">View Project</a>
+
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-card__media">
-                        <img src="img/project 2.png" alt="Project 2">
-                    </div>
-                    <div class="project-card__content">
-                        <h4>Project 2</h4>
-                        <p>Short description of Project 2.</p>
-                        <a href="https://www.behance.net/gallery/218582983/Case-Study-Via-Eurasia">View Project</a>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 
-     <footer>
+    <footer id="contact">
         <div class="container">
             <h2>Contact</h2>
             <p>Feel free to reach out to me through any of the following platforms:</p>
             <div class="social">
-                
-                <a href="https://www.linkedin.com/in/emadbarsom/" target="_blank">
-                    <img src="img/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://www.behance.net/emadbarsom" target="_blank">
-                    <img src="img/behance.svg" alt="Behance">
-                </a>
-                <li>
-                    <img src="img/email icon.svg" alt="Email me">
-                    <a href="mailto:emad.barsom@gmx.de">Email Me</a>
-                </li>
-                <li>
-                    <img src="img/call icon.svg" alt="call me">
-                    <a href="tel:+4917661653937">Call me</a> 
-                </li>
+                <div class="contact-buttons">
+                    <a href="tel:+4917661653937" class="btn call-btn">Call</a>
+                    <a href="https://www.behance.net/emadbarsom" class="btn behance-btn" target="_blank">Behance</a>
+                    <a href="https://www.linkedin.com/in/emadbarsom" class="btn linkedin-btn" target="_blank">LinkedIn</a>
+                    <a href="mailto:Emad.barsom@gmx.de" class="btn email-btn">Email</a>
+                </div>
             </div>
             <div>Copyright Emad Barsom 2025</div>
         </div>
     </footer>
-    
 </body>
 
 </html>

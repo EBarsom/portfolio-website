@@ -1,0 +1,305 @@
+:root {
+  --primary-color: #27AE60; /* Basic green */
+  --secondary-color: #4285FA; /* Blue */
+  --accent-color: #C0C0C0; /* Ashen */
+  --text-color: #000000; /* Black for texts */
+  --background-color: #FFFFFF; /* White background */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Default font */
+  font-size: 16px; /* Default font size */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.6; /* Spacing between lines */
+  color: var(--text-color); /* Light grey text color */
+  background-color: var(--background-color); /* White background */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Using poppins for headers */
+  font-weight: 700; /* Bold for headers */
+  color: var(--primary-color); /* Basic green */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger font size for main header */
+}
+
+h2 {
+  font-size: 2em; /* Header 2 slightly smaller */
+}
+
+h3 {
+  font-size: 1.75em; /* Header 3 */
+}
+
+h4, h5, h6 {
+  font-size: 1.5em; /* Smaller headers */
+}
+
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.8;
+}
+
+header {
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 100px !important; 
+  height: auto; 
+  margin-top: 20px;
+}
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  padding: 40px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--secondary-color);
+  transition: 0.3s opacity;
+  text-align: center;
+  text-decoration: none; /* Ensures no underline */
+}
+
+.button:visited {
+  color: #ffffff; /* Keep the same color on visited links */
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8; /* Reduces opacity to 80% */
+  text-decoration: none; /* Removes the underline on hover */
+}
+
+.button:active {
+  color: #C0C0C0; /* Change text color when the button is clicked */
+}
+
+.button.contact {
+  background-color: transparent; /* Transparent background */
+  color: #27AE60; /* Text color (same as primary color) */
+  text-transform: uppercase; /* Uppercase text */
+  border: 2px solid #27AE60; /* Green border */
+  transition: 0.3s background-color, font-weight; /* Transition for background and font weight */
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #4285FA; /* Change background to blue on hover */
+  font-weight: 600; /* Increase font weight */
+}
+
+.button.resume {
+  background-color: #4285FA; /* Blue background */
+  color: #ffffff; /* White text color */
+  text-transform: uppercase; /* Uppercase text */
+  border: 2px solid #4285FA; /* Blue border */
+}
+
+.button.resume:hover,
+.button.resume:focus {
+  background-color: #27AE60; /* Change background to green on hover */
+  font-weight: 600; /* Increase font weight */
+}
+
+.read-more-btn, .view-cv-btn, .email-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.read-more-btn:hover, .view-cv-btn:hover, .email-btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f1f1f1; /* Light grey background */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adds a little spacing above buttons */
+}
+
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #27AE60; /* Default green color */
+  border: 2px solid transparent;
+  width: auto;
+}
+
+/* Button colors */
+.call-btn {
+  background-color: #27AE60; /* Green */
+}
+
+.behance-btn {
+  background-color: #4285FA; /* Blue */
+}
+
+.linkedin-btn {
+  background-color: #0077B5; /* LinkedIn blue */
+}
+
+.email-btn {
+  background-color: #FF5733; /* Email orange */
+}
+
+/* Hover effects */
+.btn:hover {
+  transform: scale(1.1); /* Slightly enlarge button */
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.95); /* Slightly shrink button when clicked */
+}
+
+.btn:focus {
+  outline: 2px solid #FFD700; /* Gold outline on focus */
+}
+
+/* Contact Buttons Container */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Ensures there's some space above the buttons */
+  padding: 10px; /* Added padding to ensure some spacing around the buttons */
+}
+
+#introduction, #problem-statement, #research, #design-process, #outcome {
+  margin-bottom: 60px;
+}
+
+#introduction .column img {
+  width: 100%;
+  height: auto;
+}
+
+#research .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#design-process .container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#design-process h3 {
+  font-size: 1.75em;
+}
+
