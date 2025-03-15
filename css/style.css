@@ -1,43 +1,40 @@
 :root {
   --primary-color: #27AE60; /* Basic green */
-  --secondary-color: #4285FA; /* Blue */
+  --secondary-color: #4285FA; /* black */
   --accent-color: #C0C0C0; /* Ashen */
   --text-color: #000000; /* Black for texts */
   --background-color: #FFFFFF; /* White background */
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif; /* Default font */
-  font-size: 16px; /* Default font size */
-  font-weight: 400; /* Regular weight */
-  line-height: 1.6; /* Spacing between lines */
-  color: var(--text-color); /* Light grey text color */
-  background-color: var(--background-color); /* White background */
-  margin: 0;
-  padding: 0;
+html {
+  font-size: 62.5% ;
 }
 
-
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size:1.6rem;
+  color:var(--text-color);
+  line-height: 1.6;
+  background-color: var(--background-color);
+}
 
 img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif; /* Using poppins for headers */
   font-weight: 700; /* Bold for headers */
   color: var(--primary-color); /* Basic green */
+  line-height: 1.2; /* Line height for headers */
 }
 
 h1 {
-  font-size: 2.5em; /* Larger font size for main header */
+  font-size: 2em; /* Larger font size for main header */
 }
 
 h2 {
@@ -52,27 +49,19 @@ h4, h5, h6 {
   font-size: 1.5em; /* Smaller headers */
 }
 
-p {
-  margin-bottom: 1.5em;
-  line-height: 1.8;
-}
-
 header {
   background-color: var(--background-color);
-  text-align: center;
-  padding: 20px;
+  padding: 10px 0; 
 }
 
 header .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
-header .logo img {
-  width: 100px !important; 
-  height: auto; 
-  margin-top: 20px;
+.logo {
+  width: 100px ; 
 }
 
 
@@ -100,41 +89,14 @@ main {
 }
 
 .container {
-  width: 80%;
+  padding: 0 16px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  flex: 1;
-  margin: 20px;
+  flex-direction: column;
 }
 
 section {
   padding: 40px 0;
-}
-
-section h2 {
-  margin-bottom: 20px;
-}
-
-section .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-section img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-picture img {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
 }
 
 .button {
@@ -143,7 +105,7 @@ picture img {
   color: #ffffff;
   font-weight: 500;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   border-bottom: 2px solid var(--secondary-color);
   transition: 0.3s opacity;
   text-align: center;
@@ -162,20 +124,6 @@ picture img {
 
 .button:active {
   color: #C0C0C0; /* Change text color when the button is clicked */
-}
-
-.button.contact {
-  background-color: transparent; /* Transparent background */
-  color: #27AE60; /* Text color (same as primary color) */
-  text-transform: uppercase; /* Uppercase text */
-  border: 2px solid #27AE60; /* Green border */
-  transition: 0.3s background-color, font-weight; /* Transition for background and font weight */
-}
-
-.button.contact:hover,
-.button.contact:focus {
-  background-color: #4285FA; /* Change background to blue on hover */
-  font-weight: 600; /* Increase font weight */
 }
 
 .button.resume {
@@ -203,11 +151,9 @@ picture img {
 /* Footer Styles */
 footer {
   background-color: #f1f1f1; /* Light grey background */
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  
 }
 
 footer .social {
@@ -302,4 +248,3 @@ footer .social {
 #design-process h3 {
   font-size: 1.75em;
 }
-
