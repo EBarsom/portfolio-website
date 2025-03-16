@@ -1,7 +1,14 @@
+/* Apply border-box to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* 
 used colors:
 primary-color ( Basic Green ): #27AE60;
-secoundary-color ( Blue ): #4285FA;
+secondary-color ( Blue ): #4285FA;
 third-color ( light green ): #bcf5bc;
 accent-color ( Ashen Gray ): #C0C0C0;
 text-color ( Black ): #0000000;
@@ -16,10 +23,6 @@ background-color ( White ): #FFFFFF;
     --background-color: #FFFFFF;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -32,69 +35,115 @@ body {
     line-height: 1.6;
     background-color: var(--background-color);
 }
-h1, h2, h3, h4 {
-    font-weight: 700; /* Bold for headers */
-    color: var(--primary-color); /* Basic green */
-    line-height: 1.2; /* Line height for headers */
-}
-h1 {
-    font-size: 2em; /* Larger font size for main header */
-}
 
-h2 {
-    font-size: 2em; /* Header 2 slightly smaller */
-}
-
-h3 {
-    font-size: 1.75em; /* Header 3 */
-}
-
-h4 {
-    font-size: 1.5em; /* Smaller headers */
-}
-img {
-    width: 100%;
-}
-
+/* Header & Navigation Bar */
 header {
     background-color: var(--background-color);
-    padding: 10px 0;
+    padding: 5px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header .container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .logo {
-    width: 100px;
+    width: 60px;
+    margin: 0;
 }
 
-.nav {
+.nav ul {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav a {
-    margin: 0 10px;
+.nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--third-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.hero p {
     font-size: 1.8rem;
+    color: var(--text-color);
 }
 
-main {
-    padding: 40px 0;
-}
-
+/* Container and Row Classes */
 .container {
-    padding: 0 16px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Work Section */
+.work {
+    padding: 50px 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.work .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work-item {
+    background: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Button Styles */
 .read-more-btn,
 .view-cv-btn,
 .email-btn {
@@ -108,12 +157,9 @@ main {
     background-color: var(--accent-color);
 }
 
-section {
-    padding: 40px 0;
-}
-
+/* Button Styles (General) */
 button {
-    background-color: var(--secoundary-color );
+    background-color: var(--secondary-color);
     color: #ffffff;
     padding: 10px 20px;
     display: inline-block;
@@ -125,7 +171,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--secoundary-color);
+    background-color: var(--secondary-color);
 }
 
 button:active {
@@ -135,12 +181,32 @@ button:active {
 button:focus {
     border: 2px solid var(--primary-color);
 }
+
+/* Centered Text */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Footer-Style */
 footer-style {
     background-color: var(--accent-color);
     color: white;
     padding: 20px 0;
     text-align: center;
 }
+
+/* Container Class */
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Button Styles */
 .btn {
     display: inline-block;
@@ -153,8 +219,7 @@ footer-style {
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: #27AE60;
-    /* Default green color */
+    background-color: #27AE60; /* Default green color */
     border: 2px solid transparent;
     width: auto;
 }
