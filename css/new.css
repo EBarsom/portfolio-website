@@ -100,3 +100,49 @@ footer {
 main {
     padding: 0 0 20px 0
 }
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px 0 40px;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    .project-card {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .project-card__content {
+        padding: 0 10px 0 10px;
+    }
+    .profile-img {
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        object-position: 0 10%;
+     }
+
+    
+}
+/* Media Queries */
+@media (min-width: 1024px) {
+    .container {
+    padding: 0 80px 0 80px;
+    max-width: 1000px;
+    margin-inline: auto;
+    }
+    .profile-img {
+    aspect-ratio: 16/9;
+     }
+    .persona-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+         }
+
+}
+   
