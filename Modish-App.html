@@ -2,169 +2,200 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Modish App Case Study </title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/new.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modish App Case Study</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/new.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      padding: 10px;
+    }
 
-    
+    @media (max-width: 640px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .main-menu ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f5f5f5;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .main-menu.active ul {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo"><img src="img/Logo.png" alt="Logo"></a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="Modish-App.html">Project</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="introduction">
-            <div class="container">
-                <div class="column">
-                    <h2>Introduction</h2>
-                    <p>Welcome to the Modish case study, an online store designed to provide a seamless shopping experience for vintage fashion lovers.</p>
-                    <a href="#" class="button">read more</a>
-                    
-                </div>
-                <div class="column">
-                   
-                <img src="img/Modish%20App/mockup modish app.webp" alt="Modish%20app%20mockup">
-                        
-                    
-                </div>
-            </div>
-        </section>
-    
-        <section id="problem-statement">
-            <div class="container">
-                <div class="column">
-                    <h2>Problem Statement</h2>
-                    <p>Users struggle to find high-quality vintage clothing with an intuitive online shopping experience. Modish aims to bridge this gap.</p>
-                </div>
-            </div>
-        </section>
-    
-        <section id="research">
-            <div class="container">
-                <div class="row">
-                    <div class="column">
-                        <h2>Research</h2>
-                        <p>Through competitive analysis and user research, we identified key pain points in existing platforms.</p>
-                        <a href="#" class="button">read more</a>
-                    </div>
-                    <div class="column">
-                        <div class="persona-images">
-                            <img src="img/Modish%20App/User%20Persona%201.webp" alt="User%20Persona 1">
-                            <img src="img/Modish%20App/User%20Persona%202.webp " alt="User%20Persona 2">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-    
-        <section id="design-process">
-            <div class="container">
-                <h2>Design Process</h2>
-                </div>
-    
-                <div class="container">
-                    <div class="row">
-                        <h3>Low Wireframes</h3>
-                        <p>Initial wireframes helped structure the Modish app layout efficiently.</p>
-                    </div>
-                    <div class="column">
-                        <img src="img/Modish%20App/Low%20wirframes.webp" alt="Low Wireframes">
-                    </div>
-                </div>
-    
-                <div class="container">
-                    <div class="column">
-                        <h3>User Flow Diagram</h3>
-                        <p>Visualizing the user flow helped us understand the user journey and identify potential bottlenecks.</p>
-                        <a href="#" class="button">read more</a>
-                    </div>
-                    <div class="column">
-                        <img src="img/Modish%20App/Low%20wirframes.webp" alt="User Flow Diagram">
-                    </div>
-                </div>
-    
-                <div class="container">
-                    <div class="column">
-                        <h3>Mid Wireframes</h3>
-                        <p>We developed Mid-fidelity UI designs to enhance the user experience.</p>
-                        <a href="#" class="button">read more</a>
-                    </div>
-                    <div class="column">
-                        <img src="img/Modish%20App/Mid%20wireframes.webp" alt="Mid Wireframes">
-                    </div>
-                </div>
-    
-                <div class="container">
-                    <div class="column">
-                        <h3>High Wireframes</h3>
-                        <p>Initial High wireframes helped structure the Modish app layout efficiently.</p>
-                        <a href="#" class="button">read more</a>
-                    </div>
-                    <div class="column">
-                        <img src="img/Modish%20App/Haigh%20wireframe.webp"alt="High Wireframe">
-                    </div>
-                </div>
-    
-                <div class="container">
-                    <div class="column">
-                        <h3>Prototyping</h3>
-                        <p>The interactive prototype allowed us to test usability and refine the design further.</p>
-                        
-                    </div>
-                    <div class="column">
-                        <a href="https://www.figma.com/proto/rHRxzLoNPikgF56lfmi7yg/Modish%20online%20Store?node-id=11927-456&t=4mF7jVqynhdqs3iR-1" target="_blank" class="button prototype-btn" rel="Prototype">
-                            View Prototype
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section id="outcome">
-            <div class="container">
-                <div class="column">
-                    <h2>Outcome</h2>
-                    <p>Modish provides an elegant and user-friendly interface, making it easier for fashion enthusiasts to explore and purchase vintage clothing.</p>
-                    <a href="#" class="button">read more</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me through any of the following platforms:</p>
-            <div class="social">
-                <div class="contact-buttons">
-                    <a href="tel:+4917661653937" class="btn call-btn">Call</a>
-                    <a href="https://www.behance.net/emadbarsom" class="btn behance-btn" target="_blank">Behance</a>
-                    <a href="https://www.linkedin.com/in/emadbarsom" class="btn linkedin-btn" target="_blank">LinkedIn</a>
-                    <a href="mailto:Emad.barsom@gmx.de" class="btn email-btn">Email</a>
-                </div>
-            </div>
-            <div>Copyright Emad Barsom 2025</div>
-        </div>
-    </footer>
-    <script src="js/scripts.js"></script>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/Logo.png" alt="Logo" /></a>
 
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle">☰</div>
+
+      <nav class="nav main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="Modish-App.html">Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <div class="container">
+        <div class="column">
+          <h2>Introduction</h2>
+          <p>Welcome to the Modish case study, an online store designed to provide a seamless shopping experience for vintage fashion lovers.</p>
+          <a href="#" class="button">read more</a>
+        </div>
+        <div class="column">
+          <img src="img/Modish%20App/mockup modish app.webp" alt="Modish App Mockup" />
+        </div>
+      </div>
+    </section>
+
+    <section id="problem-statement">
+      <div class="container">
+        <div class="column">
+          <h2>Problem Statement</h2>
+          <p>Users struggle to find high-quality vintage clothing with an intuitive online shopping experience. Modish aims to bridge this gap.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h2>Research</h2>
+            <p>Through competitive analysis and user research, we identified key pain points in existing platforms.</p>
+            <a href="#" class="button">read more</a>
+          </div>
+          <div class="column">
+            <div class="persona-images">
+              <img src="img/Modish%20App/User%20Persona%201.webp" alt="User Persona 1" />
+              <img src="img/Modish%20App/User%20Persona%202.webp" alt="User Persona 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="design-process">
+      <div class="container">
+        <h2>Design Process</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <h3>Low Wireframes</h3>
+          <p>Initial wireframes helped structure the Modish app layout efficiently.</p>
+        </div>
+        <div class="column">
+          <img src="img/Modish%20App/Low%20wirframes.webp" alt="Low Wireframes" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="column">
+          <h3>User Flow Diagram</h3>
+          <p>Visualizing the user flow helped us understand the user journey and identify potential bottlenecks.</p>
+          <a href="#" class="button">read more</a>
+        </div>
+        <div class="column">
+          <img src="img/Modish%20App/Low%20wirframes.webp" alt="User Flow Diagram" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="column">
+          <h3>Mid Wireframes</h3>
+          <p>We developed Mid-fidelity UI designs to enhance the user experience.</p>
+          <a href="#" class="button">read more</a>
+        </div>
+        <div class="column">
+          <img src="img/Modish%20App/Mid%20wireframes.webp" alt="Mid Wireframes" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="column">
+          <h3>High Wireframes</h3>
+          <p>Initial High wireframes helped structure the Modish app layout efficiently.</p>
+          <a href="#" class="button">read more</a>
+        </div>
+        <div class="column">
+          <img src="img/Modish%20App/Haigh%20wireframe.webp" alt="High Wireframes" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="column">
+          <h3>Prototyping</h3>
+          <p>The interactive prototype allowed us to test usability and refine the design further.</p>
+        </div>
+        <div class="column">
+          <a href="https://www.figma.com/proto/rHRxzLoNPikgF56lfmi7yg/Modish%20online%20Store?node-id=11927-456&t=4mF7jVqynhdqs3iR-1" target="_blank" class="button prototype-btn" rel="Prototype">
+            View Prototype
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="outcome">
+      <div class="container">
+        <div class="column">
+          <h2>Outcome</h2>
+          <p>Modish provides an elegant and user-friendly interface, making it easier for fashion enthusiasts to explore and purchase vintage clothing.</p>
+          <a href="#" class="button">read more</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me through any of the following platforms:</p>
+      <div class="social">
+        <div class="contact-buttons">
+          <a href="tel:+4917661653937" class="btn call-btn">Call</a>
+          <a href="https://www.behance.net/emadbarsom" class="btn behance-btn" target="_blank">Behance</a>
+          <a href="https://www.linkedin.com/in/emadbarsom" class="btn linkedin-btn" target="_blank">LinkedIn</a>
+          <a href="mailto:Emad.barsom@gmx.de" class="btn email-btn">Email</a>
+        </div>
+      </div>
+      <div>Copyright Emad Barsom 2025</div>
+    </div>
+  </footer>
+
+  <!-- jQuery + Mobile Menu Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.main-menu').toggleClass('active');
+      });
+    });
+  </script>
 </body>
 
 </html>
